@@ -1,0 +1,52 @@
+// Centrado del contenedor del carrusel
+.carousel slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // Asegura que ocupe toda la altura de la pantalla
+}
+
+
+// carousel en el centro y con el tamaño de la pantalla más profesional
+.carousel-inner img {
+  object-fit: contain; // Asegura que la imagen mantenga sus proporciones
+  max-height: 90vh; // Limita la altura máxima al 90% de la pantalla
+  max-width: 80vw; // Limita el ancho máximo al 80% del ancho de la pantalla
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); // Sombra para profundidad
+  transition: transform 0.3s ease-in-out; // Transición suave
+}
+
+
+
+// Efecto hover para profesionalismo adicional
+.carousel-inner img:hover {
+  transform: scale(1.02); // Pequeño zoom al pasar el mouse
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%; // Centra verticalmente
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); // Fondo semitransparente
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10; // Asegura que estén por encima de las imágenes
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8); // Fondo más oscuro al pasar el mouse
+}
+
+.carousel-control.prev {
+  left: 10px; // Posición a la izquierda
+}
+
+.carousel-control.next {
+  right: 10px; // Posición a la derecha
+}
