@@ -50,3 +50,15 @@
 .carousel-control.next {
   right: 10px; // Posición a la derecha
 }
+
+
+.logo{
+    position: absolute;
+    margin: 20px;
+    padding: 5px;
+    top: 20px; // Ajusta según sea necesario
+    left: 20px; // Ajusta según sea necesario
+    z-index: 10; // Asegura que esté por encima de las imágenes
+    width: 100px; // Ajusta el tamaño según sea necesario
+    height: auto;
+}
